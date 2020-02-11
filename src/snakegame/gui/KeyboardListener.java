@@ -1,10 +1,11 @@
-package exercise49.wormgame.gui;
+package snakegame.gui;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-import exercise49.wormgame.Direction;
-import exercise49.wormgame.domain.Worm;
+import snakegame.Direction;
+import snakegame.domain.Worm;
+
 
 public class KeyboardListener implements KeyListener{
 	private Worm worm;

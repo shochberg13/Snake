@@ -1,9 +1,10 @@
-package exercise49.wormgame.domain;
+package snakegame.domain;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import exercise49.wormgame.Direction;
+import snakegame.Direction;
+
 
 public class Worm {
 	private Direction direction;

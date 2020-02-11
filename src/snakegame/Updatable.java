@@ -1,4 +1,4 @@
-package exercise49.wormgame;
+package snakegame;
 
 public interface Updatable {
 	void update();

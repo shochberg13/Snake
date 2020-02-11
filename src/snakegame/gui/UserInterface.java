@@ -1,4 +1,4 @@
-package exercise49.wormgame.gui;
+package snakegame.gui;
 
 import java.awt.Container;
 import java.awt.Dimension;
@@ -6,8 +6,9 @@ import java.awt.Dimension;
 import javax.swing.JFrame;
 import javax.swing.WindowConstants;
 
-import exercise49.wormgame.Updatable;
-import exercise49.wormgame.game.WormGame;
+import snakegame.Updatable;
+import snakegame.game.WormGame;
+
 
 public class UserInterface implements Runnable{
 	private JFrame frame;

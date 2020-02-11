@@ -1,4 +1,4 @@
-package exercise49.wormgame.game;
+package snakegame.game;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -6,11 +6,12 @@ import java.util.Random;
 
 import javax.swing.Timer;
 
-import exercise49.wormgame.Direction;
-import exercise49.wormgame.domain.Apple;
-import exercise49.wormgame.domain.Piece;
-import exercise49.wormgame.domain.Worm;
-import exercise49.wormgame.Updatable;
+import snakegame.Direction;
+import snakegame.Updatable;
+import snakegame.domain.Apple;
+import snakegame.domain.Piece;
+import snakegame.domain.Worm;
+
 
 public class WormGame extends Timer implements ActionListener{
 	private Worm worm;

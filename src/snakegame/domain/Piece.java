@@ -1,4 +1,4 @@
-package exercise49.wormgame.domain;
+package snakegame.domain;
 
 public class Piece {
 	protected int x;

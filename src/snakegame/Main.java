@@ -1,11 +1,9 @@
-package exercise49;
+package snakegame;
 
 import javax.swing.SwingUtilities;
 
-import exercise49.wormgame.Direction;
-import exercise49.wormgame.domain.Worm;
-import exercise49.wormgame.game.WormGame;
-import exercise49.wormgame.gui.UserInterface;
+import snakegame.game.WormGame;
+import snakegame.gui.UserInterface;
 
 public class Main {
 	public static void main(String[] args) {

@@ -1,13 +1,13 @@
-package exercise49.wormgame.gui;
+package snakegame.gui;
 
 import java.awt.Color;
 import java.awt.Graphics;
 
 import javax.swing.JPanel;
 
-import exercise49.wormgame.domain.Piece;
-import exercise49.wormgame.Updatable;
-import exercise49.wormgame.game.WormGame;
+import snakegame.Updatable;
+import snakegame.domain.Piece;
+import snakegame.game.WormGame;
 
 public class DrawingBoard extends JPanel implements Updatable{
 	private WormGame wg;
