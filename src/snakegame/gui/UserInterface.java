@@ -7,25 +7,24 @@ import javax.swing.JFrame;
 import javax.swing.WindowConstants;
 
 import snakegame.Updatable;
-import snakegame.game.WormGame;
-
+import snakegame.game.SnakeGame;
 
 public class UserInterface implements Runnable{
 	private JFrame frame;
-	private WormGame wg;
+	private SnakeGame game;
 	private int size;
 	private DrawingBoard db;
 	
-	public UserInterface(WormGame wg, int size){
-		this.wg = wg;
+	public UserInterface(SnakeGame game, int size, int pieceSize){
+		this.game = game;
 		this.size = size;
-		this.db = new DrawingBoard(this.wg, 50);
+		this.db = new DrawingBoard(this.game, pieceSize);
 	}
 	
 	@Override
 	public void run() {
 		frame = new JFrame("Worm Game");
-		frame.setPreferredSize(new Dimension(this.size, this.size));
+		frame.setPreferredSize(new Dimension(this.size - 30, this.size));
 		frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		
 		createComponents(frame.getContentPane());
@@ -36,7 +35,7 @@ public class UserInterface implements Runnable{
 	
 	public void createComponents(Container container){
 		container.add(this.db);
-		frame.addKeyListener(new KeyboardListener(this.wg.getWorm()));
+		frame.addKeyListener(new KeyboardListener(this.game.getSnake()));
 	}
 	
 	public JFrame getFrame(){

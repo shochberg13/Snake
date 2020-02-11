@@ -6,16 +6,16 @@ import java.awt.Graphics;
 import javax.swing.JPanel;
 
 import snakegame.Updatable;
-import snakegame.domain.Piece;
-import snakegame.game.WormGame;
+import snakegame.domain.SnakePart;
+import snakegame.game.SnakeGame;
 
 public class DrawingBoard extends JPanel implements Updatable{
-	private WormGame wg;
+	private SnakeGame game;
 	private int pieceLength;
 	
-	public DrawingBoard(WormGame wg, int pieceLength){
-		super.setBackground(Color.WHITE);
-		this.wg = wg;
+	public DrawingBoard(SnakeGame game, int pieceLength){
+		super.setBackground(Color.GRAY);
+		this.game = game;
 		this.pieceLength = pieceLength;
 	}
 
@@ -24,13 +24,13 @@ public class DrawingBoard extends JPanel implements Updatable{
 		super.paintComponent(graphics);
 		// Draw worm
 		graphics.setColor(Color.BLACK);
-		for (Piece piece : this.wg.getWorm().getPieces()){
-			graphics.fill3DRect(piece.getX(), piece.getY(), this.pieceLength, this.pieceLength, true);
+		for (SnakePart snakePart : this.game.getSnake().getPieces()){
+			graphics.fill3DRect(snakePart.getX(), snakePart.getY(), this.pieceLength, this.pieceLength, true);
 		}
 		
 		// Draw apple
 		graphics.setColor(Color.RED);
-		graphics.fillOval(this.wg.getApple().getX(), this.wg.getApple().getY(), this.pieceLength, this.pieceLength);
+		graphics.fillOval(this.game.getApple().getX(), this.game.getApple().getY(), this.pieceLength, this.pieceLength);
 		
 	}
 

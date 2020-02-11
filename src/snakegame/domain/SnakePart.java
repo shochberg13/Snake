@@ -1,12 +1,11 @@
 package snakegame.domain;
 
-public class Apple{
-
-	private int x;
-	private int y;
-	private int size;
+public class SnakePart{
+	protected int x;
+	protected int y;
+	protected int size;
 	
-	public Apple(int x, int y){
+	public SnakePart(int x, int y){
 		this.x  = x;
 		this.y = y;
 	}

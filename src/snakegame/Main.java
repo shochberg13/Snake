@@ -2,14 +2,14 @@ package snakegame;
 
 import javax.swing.SwingUtilities;
 
-import snakegame.game.WormGame;
+import snakegame.game.SnakeGame;
 import snakegame.gui.UserInterface;
 
 public class Main {
 	public static void main(String[] args) {
 
-		WormGame game = new WormGame(800, 800);
-		UserInterface ui = new UserInterface(game, 800);
+		SnakeGame game = new SnakeGame(700, 700);
+		UserInterface ui = new UserInterface(game, 800, 50);
 		SwingUtilities.invokeLater(ui);
 		
 		while(ui.getUpdatable() == null){
