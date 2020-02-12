@@ -13,6 +13,7 @@ import snakegame.domain.Snake;
 import snakegame.domain.SnakePart;
 
 
+@SuppressWarnings("serial")
 public class SnakeGame extends Timer implements ActionListener{
 	private Snake snake;
 	private Apple apple;

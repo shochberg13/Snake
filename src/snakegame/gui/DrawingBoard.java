@@ -9,6 +9,7 @@ import snakegame.Updatable;
 import snakegame.domain.SnakePart;
 import snakegame.game.SnakeGame;
 
+@SuppressWarnings("serial")
 public class DrawingBoard extends JPanel implements Updatable{
 	private SnakeGame game;
 	private int pieceLength;
